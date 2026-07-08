@@ -1,0 +1,17 @@
+---
+layout: base.njk
+---
+<section class="post">
+  <div class="container post-inner">
+    <a href="/blog/" class="post-back">&larr; Voltar para o blog</a>
+    <p class="eyebrow">{{ date | readableDate }}</p>
+    <h1>{{ title }}</h1>
+    {% if cover %}
+      <img class="post-cover" src="{{ cover }}" alt="{{ title }}">
+    {% endif %}
+    <div class="post-content">
+      {{ content | safe }}
+    </div>
+    <a href="https://wa.me/5534993009603" class="btn btn-primary" target="_blank" rel="noopener">Falar com a Dra. Paula sobre meu caso</a>
+  </div>
+</section>

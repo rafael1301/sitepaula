@@ -22,6 +22,7 @@
     <nav class="nav">
       <a href="#areas">Áreas de Atuação</a>
       <a href="#servicos">Serviços</a>
+      <a href="/blog/">Blog</a>
       <a href="#calculadora">Calculadora</a>
       <a href="#sobre">Sobre</a>
       <a href="#faq">Dúvidas</a>
@@ -317,5 +318,13 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("login", function () {
+      document.location.href = "/admin/";
+    });
+  }
+</script>
 </body>
 </html>
